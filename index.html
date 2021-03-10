@@ -3,10 +3,42 @@
     <link rel="shortcut icon" href="img/play.ico">
     <link rel="stylesheet" href="css//bootstrap.css">
     <script src="js/bootstrap.js"></script>
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/series.js"></script>
     <link rel="stylesheet" href="css//style.css">
     <head>
-        <title>Serie Favorita</title>
-        <div class="row header text-center">
+        <title>Serie Favorita</title>        
+        <nav id="miNav" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Serie favorita</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Contenido">Sinopsis & Info</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Trailers">Trailers</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Reparto">Reparto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#Temporadas">Temporadas</a>
+                  </li>
+                </ul>
+                <span class="navbar-text">
+                    <a style="text-decoration:none;" target="_blank" href="https://www.netflix.com/co/title/80057281">Stranger Things</a>
+                </span>
+              </div>
+            </div>
+          </nav>
+          <div id="miLogo" class="row header text-center">
             <div class="col-xs-12 col-md-12 col-lg-12">
                 <img src="img/logo_1.png" width="580" height="250">
             </div>
@@ -33,10 +65,10 @@
                 <br>
                 <div class="row">
                     <div class="col-xs-12 col-md-12 col-lg-12">                
-                        <p><b>Stranger Things</b> <i>(originalmente titulada Montauk)</i> es una serie de televisión dramática de misterio que está ambientada en una localidad de Indiana. Dicho lugar adquiere fama por los extraños acontecimientos que están sucediendo, similares a los del 'Proyecto Montauk', un supuesto proyecto secreto llevado a cabo por el gobierno de los Estados Unidos en el que se realizaban experimentos con la finalidad de desarrollar técnicas de guerra psicológica.<br><br>
+                        <p><b>Stranger Things</b> <i>(originalmente titulada Montauk)</i> es una serie de televisión dramática de misterio que está ambientada en una localidad de Indiana. Dicho lugar adquiere fama por los extraños acontecimientos que están sucediendo, similares a los del <del>Proyecto Montauk</del>, un supuesto proyecto secreto llevado a cabo por el gobierno de los Estados Unidos en el que se realizaban experimentos con la finalidad de desarrollar técnicas de guerra psicológica.<br><br>
                             La historia narra la súbita desaparición de un niño en esta ciudad durante la década de los 80, hecho que destapa los extraños sucesos que tienen lugar en la zona, producto de una serie de experimentos que realiza el gobierno. Además, en la ciudad aparecen fuerzas sobrenaturales inquietantes y una niña muy perturbadora.<br><br>
                             <hr>
-                            Creada por Matt Duffer y Ross Duffer <i>(Wayward Pines, Hidden)</i>, <b>Stranger Things</b> es una serie original de Netflix que cuenta con ocho episodios de una hora de duración. Esta producción televisiva está escrita y dirigida por los hermanos Duffer, además de estar producida por Shawn Levy (Los becarios).<br>
+                            Creada por Matt Duffer y Ross Duffer <i>(Wayward Pines, Hidden)</i>, <b>Stranger Things</b> es una serie original de Netflix que cuenta con ocho episodios de una hora de duración. Esta producción televisiva está escrita y dirigida por los hermanos Duffer, además de estar producida por Shawn Levy <i>(Los becarios)</i>.<br>
                         </p>
                     </div>  
                 </div>
@@ -53,12 +85,29 @@
         <br>
         <br>
         <br>
-        <section class="section-style" id="Trailer">
+        <section class="section-style" id="Trailers">
             <div class="row text-center">
-                <div class="col-xs-12 col-md-12 col-lg-12">
-                    <h3 class="white-with-blue-shadow" style="color: white;">Trailer</h3>
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <h3 class="white-with-blue-shadow" style="color: white;">Trailer 1</h3>
                     <br>
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/b9EkMc79ZSU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <h3 class="white-with-blue-shadow" style="color: white;">Trailer 2</h3>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R1ZXOOLMJ8s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <hr>
+            <div class="row text-center">
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <h3 class="white-with-blue-shadow" style="color: white;">Trailer 3</h3>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ml8JuxprNv4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>                </div>
+                <div class="col-xs-6 col-md-6 col-lg-6">
+                    <h3 class="white-with-blue-shadow" style="color: white;">Trailer 4</h3>
+                    <br>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bGvpQebJzDs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
         </section>     
@@ -178,16 +227,43 @@
                     <br>
                     <div class="row">
                         <div class="col-xs-4 col-md-4 col-lg-4"> 
-                            <img src="img/t1.jpg" width="210" height="300"> 
-                            <h6>Temporada 1</h6> 
+                            <div class="row">   
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <img src="img/t1.jpg" width="230" height="300">  
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <button type="button" class="btn btn-danger" onclick="verTemporada(1)">Temporada 1</button>
+                                </div>                                
+                            </div> 
                         </div>
                         <div class="col-xs-4 col-md-4 col-lg-4">   
-                            <img src="img/t2.jpg" width="200" height="300">  
-                            <h6>Temporada 2</h6> 
+                            <div class="row">   
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <img src="img/t2.jpg" width="230" height="300">  
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <button type="button" class="btn btn-danger" onclick="verTemporada(2)">Temporada 2</button>
+                                </div>                                
+                            </div> 
                         </div>
-                        <div class="col-xs-4 col-md-4 col-lg-4">   
-                            <img src="img/t3.jpg" width="230" height="300">  
-                            <h6>Temporada 3</h6> 
+                        <div class="col-xs-4 col-md-4 col-lg-4">
+                            <div class="row">   
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <img src="img/t3.jpg" width="230" height="300">  
+                                </div>
+                            </div>
+                            <br>
+                            <div class="row">
+                                <div class="col-xs-12 col-md-12 col-lg-12">
+                                    <button type="button" class="btn btn-danger" onclick="verTemporada(3)">Temporada 3</button>
+                                </div>                                
+                            </div>
                         </div>
                     </div>
                     <br>
@@ -197,7 +273,49 @@
                     Puedes ver esta increible serie Netflix, siguiendo este enlace: <a target="_blank" href="https://www.netflix.com/title/80057281">Ver Stranger Things en Netflix</a>
                 </div>
             </div>
-        </section>     
+        </section>
+        <!-- Modal -->
+        <div class="modal fade" id="modalCapitulos" role="dialog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" style="width: 40% important;" role="document">
+                <div class="modal-content">
+                    <div class="modal-header style-header-modal">
+                        <h5 class="modal-title" id="exampleModalLabel">Temporada 1</h5>
+                        <button type="button" style="color: white;" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row text-center">   
+                            <div class="col-xs-12 col-md-12 col-lg-12">
+                                 <h4>Sinopsis</h4>
+                            </div>
+                        </div>
+                        <br>
+                        <p id="sinopsis"></p>
+                        <br>
+                        <p style="font-size: 20px; text-align: center; background-color: red; color: white; border-radius: 10px;" id="episodios">
+                        </p>
+                        <br>
+                        <table id="tbEp" class="table table-dark table-striped">
+                            <thead>
+                              <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Titulo</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Duración</th>
+                              </tr>
+                            </thead>
+                            <tbody>                             
+                            </tbody>
+                          </table>
+                          <h4 style="text-align: center;">...</h4>
+                          <br>
+                          <h5 style="text-align: center;">Todos los episodios en <a target="_blank" href="https://www.netflix.com/title/80057281">Netflix</a></h5>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cerrar</button> 
+                    </div>
+                </div>
+            </div>
+        </div>     
         <br>
         <br>      
     </body>
