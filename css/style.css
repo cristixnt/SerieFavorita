@@ -1,3 +1,40 @@
+.header{
+    margin-top: 2%;
+}
+
+.divInicial{
+    margin-top: 7%;
+    font-family: Roboto;
+    font-size: 25px;
+    color: white;
+}
+
+.white-with-blue-shadow {
+    text-shadow: 1px 1px 2px black, 0 0 1em red, 0 0 0.2em red;
+    color: white;
+    font: 1.5em Roboto;
+ }
+
+.fondo{
+    background-image: url(../../img/bg-city.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+#Contenido{
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: white;
+    text-align: center;
+    margin-top: 10%;
+    color: black;
+    -webkit-box-shadow: 0px 0px 26px 4px rgba(255,0,0,1);
+    -moz-box-shadow: 0px 0px 26px 4px rgba(255,0,0,1);
+    box-shadow: 0px 0px 26px 4px rgba(255,0,0,1);
+    border-radius: 15px;
+    padding: 30px;
+}
+
 .container{
     margin-left: 5%;
     margin-right: 5%;
